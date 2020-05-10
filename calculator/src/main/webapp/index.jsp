@@ -27,16 +27,18 @@
 		margin-bottom: 10px; 
 		text-align:center; 
 		width: 210px; 
-		color:green; 
+		color:yellow; 
 		border: solid black 2px; 
 		} 
 
 		input[type="button"] 
 		{ 
-		background-color:green; 
+		height: 60px;
+		background-color:yellow; 
 		color: black; 
+		font-size: 30px;
 		border: solid black 2px; 
-		width:100% 
+		width:60px; 
 		} 
 
 		input[type="text"] 
@@ -49,12 +51,12 @@
 </head> 
 <!-- create table -->
 <body> 
-	<div class = title >GeeksforGeeks Calculator</div> 
+	<h2>Calculator</h2>
 	<table border="1"> 
 		<tr> 
-			<td colspan="3"><input type="text" id="result"/></td> 
+			<td colspan="3"><input type="text" style="height: 60px;width: 200px;font-size: 25px;" id="result"/></td> 
 			<!-- clr() function will call clr to clear all value -->
-			<td><input type="button" value="c" onclick="clr()"/> </td> 
+			<td><input type="button" style="color: red;" value="c" onclick="clr()"/> </td> 
 		</tr> 
 		<tr> 
 			<!-- create button and assign value to each button -->
@@ -62,26 +64,26 @@
 			<td><input type="button" value="1" onclick="dis('1')"/> </td> 
 			<td><input type="button" value="2" onclick="dis('2')"/> </td> 
 			<td><input type="button" value="3" onclick="dis('3')"/> </td> 
-			<td><input type="button" value="/" onclick="dis('/')"/> </td> 
+			<td><input type="button" style="color: brown;" value="/" onclick="dis('/')"/> </td> 
 		</tr> 
 		<tr> 
 			<td><input type="button" value="4" onclick="dis('4')"/> </td> 
 			<td><input type="button" value="5" onclick="dis('5')"/> </td> 
 			<td><input type="button" value="6" onclick="dis('6')"/> </td> 
-			<td><input type="button" value="-" onclick="dis('-')"/> </td> 
+			<td><input type="button" style="color: brown;" value="-" onclick="dis('-')"/> </td> 
 		</tr> 
 		<tr> 
 			<td><input type="button" value="7" onclick="dis('7')"/> </td> 
 			<td><input type="button" value="8" onclick="dis('8')"/> </td> 
 			<td><input type="button" value="9" onclick="dis('9')"/> </td> 
-			<td><input type="button" value="+" onclick="dis('+')"/> </td> 
+			<td><input type="button" style="color: brown;" value="+" onclick="dis('+')"/> </td> 
 		</tr> 
 		<tr> 
 			<td><input type="button" value="." onclick="dis('.')"/> </td> 
 			<td><input type="button" value="0" onclick="dis('0')"/> </td> 
 			<!-- solve function call function solve to evaluate value -->
-			<td><input type="button" value="=" onclick="solve()"/> </td> 
-			<td><input type="button" value="*" onclick="dis('*')"/> </td> 
+			<td><input type="button" style="color: green;" value="=" onclick="solve()"/> </td> 
+			<td><input type="button" style="color: brown;" value="*" onclick="dis('*')"/> </td> 
 		</tr> 
 	</table> 
 </body> 
